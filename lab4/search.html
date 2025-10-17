@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Store</title>
+  </head>
 
-<head>
-  <title>Search</title>
-</head>
+  <body>
+    <h1>Store</h1>
+    <form id="storeForm">
+      <label for="word">Word:</label>
+      <input type="text" id="word" name="word" /><br /><br />
+      <textarea
+        id="definition"
+        name="definition"
+        placeholder="Enter the definition"
+        required
+      ></textarea
+      ><br /><br />
 
-<body>
-  <h1>Search</h1>
-  <form id="searchForm">
-    <label for="searchWord">Word:</label>
-    <input type="text" id="searchWord" name="searchWord"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-  <br>
-  <div id=result></div>
-  <a href="index.html">Home</a>
-  <a href="store.html">Store</a>
-  <script src="en/en.js"></script>
-  <script src="modules/search.js"></script>
-</body>
+      <input type="submit" value="Submit" />
+    </form>
 
+    <div id="result"></div>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+
+    <script src="en/en.js"></script>
+    <script src="modules/store.js"></script>
+  </body>
 </html>
